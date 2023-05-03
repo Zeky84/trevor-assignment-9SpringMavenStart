@@ -22,9 +22,8 @@ public class FileService {
 //        CSVFormat myFormatParser = CSVFormat.RFC4180
 //                .withEscape('\\').withFirstRecordAsHeader().withIgnoreSurroundingSpaces();
 
-
-        //NOTE: Roche, I implement CSVFormat this way cause the methods above on lines22 and 23 commented are deprecated.
-        //I'm having same results of the methods below use, but this topic is completely new for me, and I'm not 100% I did
+        //NOTE: Roche, I implemented CSVFormat this way cause the methods above on lines 22 and 23 commented are deprecated.
+        //I'm having same results with the methods below use, but this topic is completely new for me, and I'm not 100% I did
         // it in the right way even if it looks like is working. As always please advice.Thanks
         CSVFormat.Builder myFormatParser = CSVFormat.RFC4180.builder()
                 .setEscape('\\').setHeader().setSkipHeaderRecord(true).setIgnoreSurroundingSpaces(true);
